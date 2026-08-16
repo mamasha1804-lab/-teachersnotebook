@@ -1,0 +1,18 @@
+@media (min-width:1201px){
+  .dashboard-head{
+    display:grid;
+    grid-template-columns:minmax(710px,1fr) 400px;
+    gap:18px;
+    align-items:end;
+  }
+  .dashboard-head>div:first-child{
+    grid-column:1;
+    grid-row:1;
+    justify-self:start;
+  }
+  .dashboard-head>.add-lesson-3d{
+    grid-column:1;
+    grid-row:1;
+    justify-self:end;
+  }
+}
