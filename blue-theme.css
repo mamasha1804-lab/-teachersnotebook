@@ -1,0 +1,90 @@
+:root{
+  --pink:#cfe8ff;
+  --pink2:#eaf6ff;
+  --pink-dark:#9dc6e8;
+  --pink-deep:#6fa7d2;
+}
+
+/* Все элементы, которые раньше были розовыми — в пастельно-голубой гамме */
+.auth-submit,
+.add-lesson-3d,
+.media-btn,
+.btn.pink,
+.btn.coral,
+.soft-btn,
+.ideas-pen-action,
+.idea-delete-btn,
+.count-pill{
+  background:linear-gradient(180deg,#eef8ff 0%,#cfe8ff 62%,#b9daf5 100%)!important;
+  color:#29445d!important;
+  border-color:rgba(92,142,181,.20)!important;
+  box-shadow:0 6px 0 #9dc6e8,0 11px 20px rgba(105,157,198,.18),inset 0 1px 0 rgba(255,255,255,.9)!important;
+}
+
+.auth-submit:hover,
+.add-lesson-3d:hover,
+.media-btn:hover,
+.btn.pink:hover,
+.btn.coral:hover,
+.soft-btn:hover,
+.ideas-pen-action:hover,
+.idea-delete-btn:hover{
+  background:linear-gradient(180deg,#f5fbff 0%,#d9eeff 62%,#c5e2f8 100%)!important;
+}
+
+.auth-submit:active,
+.add-lesson-3d:active,
+.media-btn:active,
+.btn.pink:active,
+.btn.coral:active,
+.soft-btn:active,
+.ideas-pen-action:active,
+.idea-delete-btn:active{
+  box-shadow:0 2px 0 #9dc6e8,0 6px 11px rgba(105,157,198,.15)!important;
+}
+
+/* Плюс в кнопке «Добавить урок» */
+.plus-badge{
+  background:linear-gradient(180deg,#ffffff,#e9f6ff)!important;
+  border-color:rgba(92,142,181,.24)!important;
+  box-shadow:0 3px 0 rgba(118,169,207,.28),0 5px 10px rgba(79,129,167,.14),inset 0 1px 0 #fff!important;
+}
+.plus-badge:before,.plus-badge:after{background:#6fa7d2!important}
+
+/* Розовые карточки уроков -> пастельно-голубые */
+.lesson-card.coral{background:#cfe7fb!important}
+.plan-check{accent-color:#79abd2!important}
+
+/* Розовые подложки и индикаторы */
+.ideas-preview-new,
+.soft-btn,
+.count-pill,
+.delete-mini,
+.circle-x,
+.status-unpaid{
+  border-color:#c6dfef!important;
+}
+
+.delete-mini,.circle-x{
+  background:#eaf6ff!important;
+  color:#527fa3!important;
+}
+
+.status-unpaid{
+  background:#edf8ff!important;
+  color:#527a98!important;
+}
+
+/* Блок идей */
+.ideas-card .ideas-preview-new{
+  background:linear-gradient(135deg,#fbfdff,#eef8ff)!important;
+  border-color:#d2e7f5!important;
+}
+
+.idea-delete-btn{color:#416d91!important}
+
+/* Фокусные обводки */
+input:focus,select:focus,textarea:focus{
+  border-color:#9fc9e8!important;
+  box-shadow:0 0 0 4px rgba(159,201,232,.20)!important;
+}
