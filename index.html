@@ -8,18 +8,20 @@
 <meta http-equiv="Expires" content="0">
 <title>English Teacher Planner</title>
 <meta name="theme-color" content="#f5eaf3">
-<link rel="stylesheet" href="styles.css?v=20260816-0305">
+<link rel="stylesheet" href="styles.css?v=20260816-0315">
+<link rel="stylesheet" href="ideas-patch.css?v=20260816-0315">
 </head>
 <body>
 <div id="app"></div>
-<script src="assets-1.js?v=20260816-0305"></script>
-<script src="assets-2.js?v=20260816-0305"></script>
-<script src="assets-3.js?v=20260816-0305"></script>
+<script src="assets-1.js?v=20260816-0315"></script>
+<script src="assets-2.js?v=20260816-0315"></script>
+<script src="assets-3.js?v=20260816-0315"></script>
+<script src="ideas-assets.js?v=20260816-0315"></script>
 <script>
 (async function () {
   try {
-    const version = '20260816-0305';
-    const files = ['app-1.js','app-2.js','app-3.js','app-4.js'];
+    const version = '20260816-0315';
+    const files = ['app-1.js','app-2.js','app-3.js','app-4.js','ideas-patch.js'];
     const parts = [];
     for (const file of files) {
       const response = await fetch(file + '?v=' + version, { cache: 'no-store' });
