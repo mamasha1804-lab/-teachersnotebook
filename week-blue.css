@@ -1,0 +1,7 @@
+/* Точечная замена цвета только для розовых карточек уроков в блоке «Моя неделя». Остальной интерфейс не меняется. */
+.week-card .lesson-card.coral,
+.week-grid .lesson-card.coral{
+  background:linear-gradient(180deg,#dff1ff 0%,#c9e6fb 100%)!important;
+  border:1px solid #b7d9f2!important;
+  box-shadow:0 4px 10px rgba(80,132,173,.10)!important;
+}
