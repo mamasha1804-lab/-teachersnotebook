@@ -1,0 +1,89 @@
+:root{
+  --pink:#f6df92;
+  --pink2:#fff0b8;
+  --pink-dark:#d8bd64;
+  --pink-deep:#bca048;
+}
+
+/* Все основные розовые кнопки и элементы — в пастельно-жёлтой гамме */
+.auth-submit,
+.add-lesson-3d,
+.media-btn,
+.btn.pink,
+.btn.coral,
+.soft-btn,
+.ideas-pen-action,
+.idea-delete-btn,
+.count-pill{
+  background:linear-gradient(180deg,#fff0b8 0%,#f6df92 62%,#eed27b 100%)!important;
+  color:#3b2f24!important;
+  border-color:rgba(132,108,52,.18)!important;
+  box-shadow:0 6px 0 #d8bd64,0 11px 20px rgba(184,151,62,.18),inset 0 1px 0 rgba(255,255,255,.85)!important;
+}
+
+.auth-submit:hover,
+.add-lesson-3d:hover,
+.media-btn:hover,
+.btn.pink:hover,
+.btn.coral:hover,
+.soft-btn:hover,
+.ideas-pen-action:hover,
+.idea-delete-btn:hover{
+  background:linear-gradient(180deg,#fff4c6 0%,#f8e5a0 62%,#f0d783 100%)!important;
+}
+
+.auth-submit:active,
+.add-lesson-3d:active,
+.media-btn:active,
+.btn.pink:active,
+.btn.coral:active,
+.soft-btn:active,
+.ideas-pen-action:active,
+.idea-delete-btn:active{
+  box-shadow:0 2px 0 #d8bd64,0 6px 11px rgba(184,151,62,.15)!important;
+}
+
+.plus-badge{
+  background:linear-gradient(180deg,#fffdf2,#fff3c9)!important;
+  border-color:rgba(132,108,52,.22)!important;
+  box-shadow:0 3px 0 rgba(170,139,67,.28),0 5px 10px rgba(125,101,52,.14),inset 0 1px 0 #fff!important;
+}
+.plus-badge:before,.plus-badge:after{background:#b59842!important}
+
+/* Розовые карточки уроков и прочие розовые рабочие элементы */
+.lesson-card.coral{background:#f7e39a!important}
+.plan-check{accent-color:#c2a54d!important}
+
+/* Розовые подложки и индикаторы */
+.ideas-preview-new,
+.soft-btn,
+.count-pill,
+.delete-mini,
+.circle-x,
+.status-unpaid{
+  border-color:#ead99f!important;
+}
+
+.delete-mini,.circle-x{
+  background:#fff4cf!important;
+  color:#9f7f2f!important;
+}
+
+.status-unpaid{
+  background:#fff5d7!important;
+  color:#8f742f!important;
+}
+
+/* Розовые оттенки внутри блока идей */
+.ideas-card .ideas-preview-new{
+  background:linear-gradient(135deg,#fffdf7,#fff8dd)!important;
+  border-color:#eadca9!important;
+}
+
+.idea-delete-btn{color:#80651f!important}
+
+/* Фокусные розовые обводки переводим в мягкий жёлтый */
+input:focus,select:focus,textarea:focus{
+  border-color:#dbc46f!important;
+  box-shadow:0 0 0 4px rgba(240,214,127,.18)!important;
+}
