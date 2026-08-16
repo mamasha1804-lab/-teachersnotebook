@@ -1,0 +1,35 @@
+.payment-print-btn{
+  box-shadow:0 7px 0 #bda8dc,0 12px 22px rgba(70,45,100,.14),inset 0 1px 0 rgba(255,255,255,.9)!important;
+  transform:translateY(0);
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.payment-print-btn:hover{transform:translateY(-2px)}
+.payment-print-btn:active{transform:translateY(5px);box-shadow:0 2px 0 #bda8dc,0 6px 12px rgba(70,45,100,.12)!important}
+
+@media print{
+  @page{size:A4 landscape;margin:10mm}
+  body.payment-printing{background:#fff!important}
+  body.payment-printing *{visibility:hidden!important}
+  body.payment-printing .modal-backdrop,
+  body.payment-printing .modal-backdrop *{visibility:visible!important}
+  body.payment-printing .modal-backdrop{
+    position:absolute!important;inset:0!important;background:#fff!important;padding:0!important;display:block!important;
+  }
+  body.payment-printing .modal{
+    position:absolute!important;left:0!important;top:0!important;width:100%!important;max-width:none!important;max-height:none!important;
+    overflow:visible!important;background:#fff!important;box-shadow:none!important;border:none!important;padding:0!important;
+  }
+  body.payment-printing .modal .close,
+  body.payment-printing .modal .actions,
+  body.payment-printing .circle-x{display:none!important}
+  body.payment-printing .payment-filter-title{margin:10px 0 14px!important;font-size:18px!important}
+  body.payment-printing .payment-form{
+    break-inside:avoid!important;page-break-inside:avoid!important;box-shadow:none!important;border:1px solid #cfc7d9!important;
+    margin:0 0 8px!important;padding:8px!important;background:#fff!important;
+  }
+  body.payment-printing .payment-form input,
+  body.payment-printing .payment-form select{
+    border:none!important;background:transparent!important;box-shadow:none!important;color:#24164f!important;padding:2px 0!important;
+  }
+  body.payment-printing .payment-status{border:1px solid #cfc7d9!important;box-shadow:none!important}
+}
