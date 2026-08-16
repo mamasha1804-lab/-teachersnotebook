@@ -8,19 +8,19 @@
 <meta http-equiv="Expires" content="0">
 <title>English Teacher Planner</title>
 <meta name="theme-color" content="#f5eaf3">
-<link rel="stylesheet" href="styles.css?v=20260816-0315">
-<link rel="stylesheet" href="ideas-patch.css?v=20260816-0315">
+<link rel="stylesheet" href="styles.css?v=20260816-0320">
+<link rel="stylesheet" href="ideas-patch.css?v=20260816-0320">
 </head>
 <body>
 <div id="app"></div>
-<script src="assets-1.js?v=20260816-0315"></script>
-<script src="assets-2.js?v=20260816-0315"></script>
-<script src="assets-3.js?v=20260816-0315"></script>
-<script src="ideas-assets.js?v=20260816-0315"></script>
+<script src="assets-1.js?v=20260816-0320"></script>
+<script src="assets-2.js?v=20260816-0320"></script>
+<script src="assets-3.js?v=20260816-0320"></script>
+<script src="ideas-assets.js?v=20260816-0320"></script>
 <script>
 (async function () {
   try {
-    const version = '20260816-0315';
+    const version = '20260816-0320';
     const files = ['app-1.js','app-2.js','app-3.js','app-4.js','ideas-patch.js'];
     const parts = [];
     for (const file of files) {
@@ -28,16 +28,10 @@
       if (!response.ok) throw new Error(`Не удалось загрузить ${file}: ${response.status}`);
       parts.push(await response.text());
     }
-    const code = parts.join('\n');
-    (0, eval)(code);
+    (0, eval)(parts.join('\n'));
   } catch (error) {
     console.error(error);
-    document.getElementById('app').innerHTML = `
-      <div style="max-width:760px;margin:80px auto;padding:32px;border-radius:28px;background:#fff;box-shadow:0 16px 50px rgba(70,40,90,.12);font-family:Arial,sans-serif;color:#34204d">
-        <h1 style="margin-top:0">English Teacher Planner</h1>
-        <p>Не удалось запустить приложение.</p>
-        <pre style="white-space:pre-wrap;color:#9b4765">${String(error.message || error)}</pre>
-      </div>`;
+    document.getElementById('app').innerHTML = `<div style="max-width:760px;margin:80px auto;padding:32px;border-radius:28px;background:#fff;box-shadow:0 16px 50px rgba(70,40,90,.12);font-family:Arial,sans-serif;color:#34204d"><h1 style="margin-top:0">English Teacher Planner</h1><p>Не удалось запустить приложение.</p><pre style="white-space:pre-wrap;color:#9b4765">${String(error.message || error)}</pre></div>`;
   }
 })();
 </script>
